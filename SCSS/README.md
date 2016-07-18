@@ -4,43 +4,7 @@
 3. [Best Practices](#best-practices)
 
 ## Compiling SCSS
-
-SCSS requires an extra compilation step to turn SCSS syntax:
-
-``` sourceCode
-.badge {
-    padding: 2px $horizontal-unit;
-
-    &.badge--success {
-        color: #fff;
-        background: #7fc243;
-    }
-}
-```
-
-into CSS:
-
-``` sourceCode
-/* line 25, ../../../../node_modules/eb-styleguide/sass/modules/_badge.scss */
-.badge {
-  padding: 2px 10px;
-}
-
-/* line 28, ../../../../node_modules/eb-styleguide/sass/modules/_badge.scss */
-.badge.badge--success {
-  color: #fff;
-  background: #7fc243;
-}
-```
-
-We have a Grunt task for compiling SCSS that can be run via `grunt compass` or the default `grunt` command. See our grunt-tasks page for more.
-
-Assuming a base path of **django/media/django/**:
-
--   SCSS files in the styleguide repo compile to **css/src/styleguide/*/*.css**
--   **compass/sass/non\_modular/*/*.scss** compile to **src/smacss/non\_modular/*/*.css**
-
-Those resulting `.css` files are what we include in our pages.
+TODO: needs updating
 
 ## Variables
 
