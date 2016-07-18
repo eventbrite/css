@@ -87,6 +87,7 @@ Order matters. `.slat--disabled__link` describes a disabled link in an otherwise
 
 // A disabled link in a slat
 .slat__link--disabled {}
+```
 
 We don't always need a new class for every single variation, subcomponent, variation of a subcomponent. Sometimes the right thing to do *is* to use a more general selector (`.slat a`) rather than a new class (`.slat__link`).
 
