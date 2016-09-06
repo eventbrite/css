@@ -10,21 +10,21 @@ Accessibility
 
 # Overview
 
-Accessibility compliance is important beacause it allows *all* people to use our website. It is also legally obligated in some countries - see [Wikipedia about WCAG](https://www.w3.org/WAI/WCAG20/quickref/?currentsidebar=%23col_customize&levels=aaa>) and [ADA 2010 Standards]. We follow [Web Content Accessibility Guidelines 2.0 AA compliance](https://www.w3.org/WAI/WCAG20/quickref/?currentsidebar=%23col_customize&levels=aa>).
+Accessibility compliance is important beacause it allows *all* people to use our website. It is also legally obligated in some countries - see [Wikipedia about WCAG](https://en.wikipedia.org/wiki/Web_Content_Accessibility_Guidelines#Legal_obligations) and [ADA 2010 Standards](https://www.ada.gov/2010ADAstandards_index.htm). We follow [Web Content Accessibility Guidelines 2.0 AA compliance](https://www.w3.org/WAI/WCAG20/quickref/?currentsidebar=%23col_customize&levels=aa>).
 
 Below are presentations about the benefits of accessbility and general accessbility guidelines by Alli:
 
--   [Consumer Accessibility Benefit Presentation] (Q1 2016)
--   [How to be Accessible Slides]
+-   [Consumer Accessibility Benefit Presentation (Q1 2016)](https://docs.google.com/a/eventbrite.com/presentation/d/1tfRxOJ1N6MAWLo6Mey2TSqFvpD5d1sOKm6ssYJNE5tA/edit?usp=sharing)
+-   [How to be Accessible Slides](http://slides.com/alacker/how-to-accessible/)
 
 # Tools
 
 -   [WCAG 2.0 AA Checklist](https://www.w3.org/WAI/WCAG20/quickref/?currentsidebar=%23col_customize&levels=aa)
 -   [Tota11y Plugin](http://khan.github.io/tota11y/)
 -   [WAVE Chrome Extension](http://wave.webaim.org/extension/)
--   [SSA Standard Keyboard Shortcuts](
+-   [SSA Standard Keyboard Shortcuts](https://www.ssa.gov/accessibility/keyboard_nav.html)
 
-The [Web Content Accessbiility Guidelines] is developed by World Wide Web Consortium (W3C). Tota11y is now installed on all EVB Dev and EVBQA pages (thanks Amira!) for testing. Download WAVE at the link above for use on Chrome.
+The [Web Content Accessbiility Guidelines](https://www.w3.org/WAI/intro/wcag) is developed by World Wide Web Consortium (W3C). Tota11y is now installed on all EVB Dev and EVBQA pages (thanks Amira!) for testing. Download WAVE at the link above for use on Chrome.
 
 # How To Test
 
@@ -53,6 +53,7 @@ Accessibility(self.driver).full_accessibility_audit()
 VoiceOver is a screenreader built into Mac computers. Check out this [VoiceOver Tutorial]
 
 | Keyboard Shortcut | Action |
+| --- | --- |
 | Command-F5 | On/Off |
 | Ctrl | Pause/Unpause | 
 | Ctrl + Option + A | Start Reading |
@@ -72,7 +73,7 @@ VoiceOver is a screenreader built into Mac computers. Check out this [VoiceOver 
 
 ### Images
 
-All `<img>` tag
+ - All `<img>` tag must have an `alt` attribute. These should be empty if the image is only decoration or is not visible to users.
 
 ### Contrast and Color
 
@@ -83,7 +84,7 @@ All `<img>` tag
 
 ### Headers
 
- Heading structure must indicate hierarchy and relationship between sections of the page
+ - Heading structure must indicate hierarchy and relationship between sections of the page
 
 ### Zoom
  
@@ -105,7 +106,7 @@ All `<img>` tag
 ### Inputs
 
  - Every input needs a label associated with it
- - if an input is required, it must have aria-required=True
+ - If an input is required, it must have aria-required=True
  - If an error is automatically detected, the error must be described to the user in text
  - Must provide suggestions for fixing content when there are errors
 
