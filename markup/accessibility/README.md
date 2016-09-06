@@ -6,11 +6,11 @@ Accessibility
 1. [Overview](#overview)
 1. [Tools](#tools)
 1. [How To Test](#how-to-test)
-1. [Checklist: What to Look For](#Checklist-What-to-Look-For)
+1. [What to Look For](#what-to-look-for)
 
 # Overview
 
-Accessibility compliance is important beacause it allows *all* people to use our website. It is also legally obligated in some countries - see [Wikipedia about WCAG] and [ADA 2010 Standards]. We follow (Web Content Accessibility Guidelines) [WCAG 2.0 AA compliance].
+Accessibility compliance is important beacause it allows *all* people to use our website. It is also legally obligated in some countries - see [Wikipedia about WCAG](https://www.w3.org/WAI/WCAG20/quickref/?currentsidebar=%23col_customize&levels=aaa>) and [ADA 2010 Standards]. We follow [Web Content Accessibility Guidelines 2.0 AA compliance](https://www.w3.org/WAI/WCAG20/quickref/?currentsidebar=%23col_customize&levels=aa>).
 
 Below are presentations about the benefits of accessbility and general accessbility guidelines by Alli:
 
@@ -19,10 +19,10 @@ Below are presentations about the benefits of accessbility and general accessbil
 
 # Tools
 
--   [WCAG 2.0 AA Checklist][WCAG 2.0 AA compliance]
--   [Tota11y Plugin]
--   [WAVE Chrome Extension]
--   [SSA Standard Keyboard Shortcuts]
+-   [WCAG 2.0 AA Checklist](https://www.w3.org/WAI/WCAG20/quickref/?currentsidebar=%23col_customize&levels=aa)
+-   [Tota11y Plugin](http://khan.github.io/tota11y/)
+-   [WAVE Chrome Extension](http://wave.webaim.org/extension/)
+-   [SSA Standard Keyboard Shortcuts](
 
 The [Web Content Accessbiility Guidelines] is developed by World Wide Web Consortium (W3C). Tota11y is now installed on all EVB Dev and EVBQA pages (thanks Amira!) for testing. Download WAVE at the link above for use on Chrome.
 
@@ -52,18 +52,13 @@ Accessibility(self.driver).full_accessibility_audit()
 
 VoiceOver is a screenreader built into Mac computers. Check out this [VoiceOver Tutorial]
 
-> header
-> “keyboard shortcut”, “action”
->
-> widths
-> 20, 20
->
-> “Command-F5”, “On/Off” 
-> “Ctrl”, “Pause/Unpause” 
-> “Ctrl + Option + A”, “Start Reading” 
-> “Ctrl + Option + U”, “View page navigation” 
-> “Ctrl + Option + U + arrows”, “Change navigation type”
-> “Ctrl + Option + arrows”, “Read previous/next”
+| Keyboard Shortcut | Action |
+| Command-F5 | On/Off |
+| Ctrl | Pause/Unpause | 
+| Ctrl + Option + A | Start Reading |
+| Ctrl + Option + U | View Page Navigation |
+| Ctrl + Option + U + Arrows | Change Navigation Type |
+| Ctrl + Option + Arrows | Read Previous/Next |
 
 -   Do your headings make sense?
 -   Do your your icons get read?
@@ -92,21 +87,20 @@ All `<img>` tag
 
 ### Zoom
  
- You should be able to zoom in on the page to 200% and still be able to read content
+ - You should be able to zoom in on the page to 200% and still be able to read content
 
 ### Keyboard
 
- -You should be able to do everything on the page by using only your keyboard
- -You should always be able to see what element is focused with a visual differentiator
+ - You should be able to do everything on the page by using only your keyboard
+ - You should always be able to see what element is focused with a visual differentiator
 
 ### Title
 
- Every page must have a descriptive title explaining the page contents
+ - Every page must have a descriptive title explaining the page contents
 
 ### Links
 
- -All links must have descriptive content inside explaining what it is linking to. With our site this means to be careful of links that are icons, or that say things like "more". 
- -(Users often navigate webpages by looking at only the links and not surrounding content)
+ - All links must have descriptive content inside explaining what it is linking to. With our site this means to be careful of links that are icons, or that say things like "more". (Users often navigate webpages by looking at only the links and not surrounding content)
 
 ### Inputs
 
@@ -122,14 +116,14 @@ All `<img>` tag
 
 ### Good HTML Markup
 
- - complete start and end tags
- - correct nesting
- - no duplicate ids or attributes
+ - Complete start and end tags
+ - Correct nesting
+ - No duplicate ids or attributes
 
 ### Purchase-Specific Implementations
 
- - must be reversible or ask for confirmation
- - must allow for longer time frames and communicate timeouts
+ - Must be reversible or ask for confirmation
+ - Must allow for longer time frames and communicate timeouts
 
   [Wikipedia about WCAG]: https://en.wikipedia.org/wiki/Web_Content_Accessibility_Guidelines#Legal_obligations
   [ADA 2010 Standards]: http://www.ada.gov/2010ADAstandards_index.htm
@@ -141,4 +135,3 @@ All `<img>` tag
   [SSA Standard Keyboard Shortcuts]: https://www.ssa.gov/accessibility/keyboard_nav.html
   [Web Content Accessbiility Guidelines]: https://www.w3.org/WAI/intro/wcag
   [VoiceOver Tutorial]: http://webaim.org/articles/voiceover
-
