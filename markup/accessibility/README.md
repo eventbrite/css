@@ -55,7 +55,7 @@ VoiceOver is a screenreader built into Mac computers. Check out this [VoiceOver 
 | Keyboard Shortcut | Action |
 | --- | --- |
 | Command-F5 | On/Off |
-| Ctrl | Pause/Unpause | 
+| Ctrl OR Caps Lock | Pause/Unpause | 
 | Ctrl + Option + A | Start Reading |
 | Ctrl + Option + U | View Page Navigation |
 | Ctrl + Option + U + Arrows | Change Navigation Type |
